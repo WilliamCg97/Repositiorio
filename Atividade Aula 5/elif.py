@@ -3,18 +3,21 @@
 # Reprovado <40 
 
 
-n1 = int(input("Digite nota da sua primeira prova :  "))
-n2 = int(input("Digite nota da sua segunda prova :  "))
-n3 = int(input("Digite nota da sua terceira  prova :  "))
+n1 = float(input("Digite nota da sua primeira prova entre 0 a 7: "))
+n2 = float(input("Digite nota da sua primeira Atividade  entre 0 a 3 :" ))
 
 
-media=  (n1 + n2 + n3 / 3 )
 
+#Notas da prova é igual a 70% da nota final 
+#nota das atividades = 30% da media final 
 
-if media >= 50 :
+media=  (n1 + n2 ) 
+print(f"Media das notas  : {media}")
+
+if media >= 5 :
     print("Aluno Aprovrado !!! ")
     
-elif media <= 40 and media <= 49 :
+elif media >= 4 :
     print("Aluno de Recuperação :o  !! ")
 
 else :  

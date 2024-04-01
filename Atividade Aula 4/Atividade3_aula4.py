@@ -4,7 +4,7 @@
 ## viagens mais longas.
 
 n1 = int(input("Qual a distancia da cidade que você deseja ir ? digite valor em km "))
-
+dm= 200
 
 ## até 200 km
 c1 = (0.50 * n1 )
@@ -12,7 +12,7 @@ c1 = (0.50 * n1 )
 c2 = (0.45 * n1 )
 
 
-if n1 <= 200 : 
+if n1 <= dm : 
     print(f"Valor da viagem R${c1}")
 
 else :

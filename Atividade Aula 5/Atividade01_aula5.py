@@ -17,7 +17,7 @@ vc =  float(input("Qual o valor da casa ? R$ "))
 
 #tempo para pagar
 
-t =  float(input("Quantos anos para pagar esse emprestimo ? "))
+t =  int(input("Quantos anos para pagar esse emprestimo ? "))
 
 t1= t * 12 
 
@@ -25,11 +25,11 @@ t1= t * 12
 
 p =  vc / t1   
 
-print(f"Valor da parcela {p}")
+print(f"Valor da parcela {p:.2f}")
 
 #Media exigida pelo banco.
 
-me = 0.3 * n1 
+me = n1 *  0.3 
 
 
 print(f"Valor mensal 30% {me}")

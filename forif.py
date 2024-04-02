@@ -1,7 +1,7 @@
 
 from  random import randint
 
-aleatorio = randint(0,5)
+
 maquina = 0 
 usuario = 0
 
@@ -9,7 +9,8 @@ usuario = 0
 
 # inicio fim salto     i  f s
 for elemento in range (1,11,1) : 
-
+    aleatorio = randint(0,5)
+    
     n1= int(input(f"Rodada -{elemento}   Digite um numero : "))
 
     if n1 == aleatorio :

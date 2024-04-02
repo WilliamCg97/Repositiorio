@@ -19,7 +19,7 @@ infantil = 14
 junior = 19 
 senior = 24 
  
-nascimento= print("Digite a data de seu nascimento ")
+nascimento= int(input("Digite a data de seu nascimento "))
 
 
 id = aa - nascimento 

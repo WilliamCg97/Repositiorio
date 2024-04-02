@@ -24,15 +24,14 @@ bc = reta2 + reta3
 
 if (ab>reta3) and (ac>reta2) and (bc>reta1) : 
     print( "é um triangulo ")
+
+    if reta1 == reta2 == reta3 :
+        print("O triangulo é Equilátero ! ")
+        
+    elif  reta1 != reta2 != reta3 != reta1 :
+        print("É um triangulo Escaleno ")
+        
+    else :
+        print("É um triangulo Isósceles ")
 else:
     print( "nâo é um triangulo ")   
-    
-    
-if ab == bc and bc == ac :
-    print("O triangulo é Equilátero ! ")
-    
-elif  ab == bc or bc == ac:
-    print("É um triangulo Isósceles ")
-    
-else :
-    print("É um triangulo escaleno")

@@ -21,3 +21,12 @@ for elemento in range (1,11,1) :
         print("VocÊ errou ! ")
         maquina = maquina + 1 
         
+else :
+
+    if usuario > maquina : 
+        print(" Usuario ganhou :DDD ")
+    elif usuario == maquina :
+        print ( " empate :o ")
+    
+    else :
+        print(" Maquina venceu ") 

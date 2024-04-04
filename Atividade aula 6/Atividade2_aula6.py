@@ -11,3 +11,10 @@ for n1 in range (0 , 51 , 1 ) :
     if n2 == 0 : 
         print (f"{n1}")
     
+    
+
+
+
+## modo mais pratico 
+## for loop in range (0 , 51 , 2) 
+## print (f"{loop +1 }")

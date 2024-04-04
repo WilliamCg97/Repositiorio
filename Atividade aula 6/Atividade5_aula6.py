@@ -6,10 +6,11 @@
 
 total = 0 
 
-for loop in range (1,3) : 
-    n1 = int ( input (f" Escolha um numero {loop}"))
+for loop in range (1,7) : 
+    n1 = int ( input (f" Escolha um numero {loop} s"))
+    resto = n1 % 2 
     
-    if n1 % 2 == 0 :
+    if resto  == 0 :
         total = total + n1 
     else : 
-        print(f"{total+ total }")
+        print (f"{total + n1 }")

@@ -6,14 +6,23 @@
 
 ## progreçao aritimetica //  
 
+## usuario digitando o termo ex (termo = 15 ) razao = 10 resultado seria , 25 35 45 55 65 75 ... 
 
 
-razao = 3 
+## n1 termo 
+## n2 razão 
 
-termo = 1 
+ 
+n1 = int(input("Digite o termo : "))
+n2 = int(input("Digite a razao : "))
+ultimotermo = (n1 + (10 - 1 ) * n2 ) + n2
 
-n1 = int(input ("Digite o valor da razão ") )
-n2 = int(input ("Digite o termo "))
 
-##for loop in range (1,10,1) :
+for loop in range (n1, ultimotermo ,n2) : 
+    print(f"{loop}", end= ' -> ')
+else : 
+    print("fim ")
+
+
+
 

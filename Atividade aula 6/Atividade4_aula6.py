@@ -13,4 +13,4 @@ for n2 in range (0 , 21 , 1 ) :
     if n2 <= 20 :
         print (f"{n1} X {n2} = {n3}")
         
-    
+   

@@ -9,30 +9,27 @@
 n = 1 
 soma = 0
 rodadas = 0 
-
+n2 = "N" 
 while True :
-    
-    
-    
+        
+      
     n1 = int(input(" numero : "))
-    
+          
     soma = soma + n1 
     rodadas = rodadas + 1 
     
-          
     
-    if n == "N" : 
+    if n2 == "N" : 
         
-        n1 = int(input(" numero : "))
         n2 = input("deseja encerrar o  programa digitando  s // n  :").upper() 
 
         
         
     
-    else : 
+    elif n2 == "S" : 
         media = soma / rodadas 
-        print(f"{media}")
-        print(f"{soma}")
+        print(f"A media dos numeros é {media}")
+        print(f"A soma dos numeros é {soma}")
         break
 
 

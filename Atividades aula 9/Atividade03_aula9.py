@@ -14,17 +14,18 @@
 
 
 
-lista_times= (' Palmeiras SP' ,  'Gremio' ,  'Atletico Mineiro MG' ,  'Flamengo' ,  'Botafogo FR RJ',  'Red Bull Bragantino SP' ,  'Fluminense RJ' ,  'CA Paranaense PR' ,  'Internacional RS' , 'Fortaleza CE' , 'São Paulo' , 'Cuiabá Esporte Clube MT' , 'Corinthians SP' , 'Cruzeiro' , 'Vasco Gama' , 'Bahia' , 'Santos FC SP' , 'Goiás EC GO' , 'Coritiba PR' , 'América FC MG')
+lista_times= ('palmeiras SP' ,  'gremio' ,  'atletico Mineiro MG' ,  'flamengo' ,  'botafogo FR RJ',  'red Bull Bragantino SP' ,  'fluminense RJ' ,  'ca Paranaense PR' ,  'internacional RS' , 'fortaleza CE' , 'são Paulo' , 'cuiabá Esporte Clube MT' , 'corinthians SP' , 'cruzeiro' , 'vasco Gama' , 'bahia' , 'santos FC SP' , 'goiás EC GO' , 'coritiba PR' , 'américa FC MG')
 
 ## mostrando apenas da atividade a e b . 
 
-# print(lista_times[0:5])
-# print(lista_times[-4 : 20])
+print(lista_times[0:5])
+print(lista_times[-4 : 20])
 
 ## c 
-lista_ordenada = sorted(lista_times).upper()
+lista_ordenada = sorted(lista_times)
 print (lista_ordenada)
 
+print (lista_times[16])
 
 
 

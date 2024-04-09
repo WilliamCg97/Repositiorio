@@ -10,7 +10,7 @@
 import random
 
 # Gerar cinco números aleatórios e colocá-los em uma tupla  . comando tuple transformando os numeros randons em tupla , range 1 a 10 sao os numeros aleatorios , ultimo numero da sentença 5 = tanto de numeros aleatorios gerados 
-numeros_aleatorios = tuple(random.sample(range(1, 10), 5))
+numeros_aleatorios = tuple(random.sample(range(1, 10), 5))   # random.sample(): Esta função está sendo usada para selecionar aleatoriamente 5 elementos . 
 
 # Mostrar a listagem dos números gerados
 print("Números gerados:", numeros_aleatorios)

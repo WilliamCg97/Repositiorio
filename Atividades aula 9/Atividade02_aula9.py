@@ -21,5 +21,5 @@ maior_valor = max(numeros_aleatorios)
 
 # Mostrar o menor e o maior valor
 print("Menor valor:", menor_valor)
-print("Maior valor:", maior_valor )
+print("Maior valor:", maior_valor ) 
         

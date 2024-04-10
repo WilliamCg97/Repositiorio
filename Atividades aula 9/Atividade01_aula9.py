@@ -17,6 +17,12 @@ while True :
     n1 = int(input("Digite um numero de 0 a 20 :  "))
     print (tupla[n1])
     
+    if n1 <0 or n1 > 20 :
+        print("Digite um valor valido ")
+        break
+    
+    
+    
     n2 = input("Deseja continuar s/n :").upper()
     
     if n2 != 'S' :

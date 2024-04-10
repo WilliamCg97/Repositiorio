@@ -8,16 +8,16 @@
 
 
 
-l1 = [ 5 , 5 , 5 , 15 , 15 , 16 ]
+l1 = [ 'R$ 5' , 'R$ 5' , 'R$ 5' , 'R$ 15' , 'R$ 15' , 'R$ 16' ]
 l2= ['coca' , 'pastel ' , 'coxinha ' , 'frango ' , 'pf ' ,'pf 2' ]
 
 
 l3 = l1 + l2 
 
-for loop in range (0 , 6 ,1 ) : 
-    print (l2[loop] , '- R$' , l1 [loop] )
+for loop in range (0 , 1 ,1 ) : 
     
-    f= tuple(loop)
-    print(f)
+    
+    tupla = tuple(zip(l2, l1))
+    print(tupla)
   
 

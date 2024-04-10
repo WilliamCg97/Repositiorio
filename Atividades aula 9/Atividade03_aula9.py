@@ -19,7 +19,7 @@ lista_times= ('palmeiras SP' ,  'gremio' ,  'atletico Mineiro MG' ,  'flamengo' 
 ## mostrando apenas da atividade a e b . 
 
 print(lista_times[0:5])
-print(lista_times[-4 : 20])
+print(lista_times[-4 : ])
 
 ## c 
 lista_ordenada = sorted(lista_times)

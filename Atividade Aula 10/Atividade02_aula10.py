@@ -16,6 +16,6 @@ while True :
     n2 +=1 
     validando= lista.index{n1}
     
-    if validando == 2 :
+    if validando == 2 : 
         print ("numero ja cadastrado") 
         

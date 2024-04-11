@@ -9,10 +9,15 @@
 lista=[]
 
 
-while True : 
-    
-    n1 = int(input("Digite o numero que deseja cadastrar "))
+ 
+for loop in range (0,5,1) :
+    n1 = int(input("Digite o numero que deseja cadastrar, digite  "))
     lista.append(n1)
    
    
+listam= max(lista)
+print (lista)
+
+    
+
     

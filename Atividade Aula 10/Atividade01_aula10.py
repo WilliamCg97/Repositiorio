@@ -17,5 +17,5 @@ for loop in range (0 , 5) :
     mmlista = max(lista)
 
 print (lista )
-print (mlista) 
-print (mmlista) 
+print (mlista ,"a posição do maor item da lista esta em ", lista.index(mmlista)) 
+print (mmlista,"a posição do menor item da lista esta em " , lista.index(mlista)) 

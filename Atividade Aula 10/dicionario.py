@@ -42,3 +42,7 @@
 # print(personagens[0])
 # primeiro_registro = personagens[0]
 # print(primeiro_registro["nome"])
+
+
+
+

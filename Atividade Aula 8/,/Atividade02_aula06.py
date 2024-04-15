@@ -12,19 +12,20 @@ print (" Condição para termino do programa é digitar 999 ")
 
 n2 = 999
 soma = 0 
+i= 0
 
 while True : 
         
     n1 = int (input("Digite um numero inteiro : ") )
     if n1 != n2 :
         soma = soma + n1
-        
+        i = i +1     
         print (f"{n1}" , end= "-" ) 
         
          
     else  :
-        print(f"{soma}")
-        
+        print(f"A soma entre os numeros digitados é {soma}")
+        print (f"voce digitou {i} numeros ")
         break
     
     

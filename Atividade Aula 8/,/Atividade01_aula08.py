@@ -27,7 +27,7 @@ while True :
     else : 
         n3  = n3 + 1
         print(" Você acertou o numero !! :D ")
-        print(f"o numero de tentativas foi {n3} ")
+        print(f"o numero de tentativas foi {n3}  tentativas :D ")
         break
 
 

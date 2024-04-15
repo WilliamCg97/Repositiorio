@@ -35,7 +35,7 @@ while True:
         print (f"A maquina escolheu {n2}")
         print("Portanto PAR ganhou !! ")  
         ponto= ponto+1
-        print(f"Você ganhou to {ponto}")
+        print(f"Você ganhou ponto {ponto}")
     
     elif  resultado == 1  and t1 == "PAR" :
         print (f"A maquina escolheu {n2}")
@@ -58,10 +58,9 @@ while True:
         print(f"Voce ganhou um ponto {ponto}")
         
 
-    
+print("coloque mais uma ficha ")
               
         
-
 
 
 

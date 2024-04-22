@@ -4,11 +4,11 @@
 # receba as dimensões de um terreno retangular (largura e
 # comprimento) e mostre a área do terreno.
 
-
-def Area (largura , comprimento ) : 
-    area1 = largura * comprimento
-    return area1
-
 n1 = int (input ("Digite a largura "))
 n2 = int (input ("Digite o comprimento "))
-print (Area (n1,n2 ))
+
+def area (n1 , n2 ) : 
+    area = n1 * n2
+    return area
+
+print (f"A area do terreno é igual a {area(n1 , n2 )}m³ .")

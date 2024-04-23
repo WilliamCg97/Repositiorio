@@ -3,17 +3,19 @@
 # Escreva um programa que peça ao usuário para digitar dois
 # números e divida o primeiro número pelo segundo. Certifique-se
 # de lidar com a possibilidade de divisão por zero.
-
-try  : 
+while True : 
+    try  : 
     
-    n1 = int (input("Digite o primeiro valor "))
-    n2 = int (input("Digite o segundo valor "))
-    div = n1 / n2 
+        n1 = int (input("Digite o primeiro valor "))
+        n2 = int (input("Digite o segundo valor "))
+        div = n1 / n2 
+    
+    except ZeroDivisionError : 
+        print ('nao existe divisao de inteiro por 0  ! ')
  
-    print (div)
- 
+    except ValueError : 
+        print ("Digite somente numeros ")
    
-except ZeroDivisionError : 
- print ('nao existe divisao de inteiro por 0  ! ')
- 
- 
+    else : 
+        print (f"O valor da divisão foi {div}")
+        break

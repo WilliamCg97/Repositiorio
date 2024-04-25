@@ -48,19 +48,19 @@ while True :
             pygame.quit()
             exit()
         
-        # definindo o evento da tecla sendo apertanda " keydown" , especificando a tecla up 
-        # if event.type == KEYDOWN :
-        #     if event.key == K_UP :  
-        #         pos_y_snake -= 10   
+            # definindo o evento da tecla sendo apertanda " keydown" , especificando a tecla up 
+        if event.type == KEYDOWN :
+            if event.key == K_UP :  
+                pos_y_snake -= 10   
                 
-        #     if event.key == K_DOWN : 
-        #         pos_y_snake += 10
+            if event.key == K_DOWN : 
+                pos_y_snake += 10
                 
-        #     if event.key == K_LEFT : 
-        #         pos_x_snake -= 10     
+            if event.key == K_LEFT : 
+                pos_x_snake -= 10     
         
-        #     if event.key == K_RIGHT : 
-        #         pos_x_snake += 10 
+            if event.key == K_RIGHT : 
+                pos_x_snake += 10 
         
     if pygame.key.get_pressed()[K_UP] :
         pos_y_snake -= 10

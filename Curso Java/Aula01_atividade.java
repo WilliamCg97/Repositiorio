@@ -78,10 +78,10 @@
 		
 // 		// resolução 2 
 		
-// 		int soma= 85 + 96 ;		int subtracao = 100 -50 ; 		int divisao= 40 / 8 ; 		int mult = 7 * 6 ; 
+		int soma= 85 + 96 ;		int subtracao = 100 -50 ; 		int divisao= 40 / 8 ; 		int mult = 7 * 6 ; 
 		
 		
-// 		System.out.println("O resultado da soma de 85 + 96 é " +soma);
-// 		System.out.println("O resultado da subtração de 100 - 50 = " +subtracao);
-// 		System.out.println("O resultado da divisao de 40 por 8 =  " +divisao);
-// 		System.out.println("O resultado da multiplicação  7 * 6  " +mult);
+		System.out.println("O resultado da soma de 85 + 96 é " +soma);
+		System.out.println("O resultado da subtração de 100 - 50 = " +subtracao);
+		System.out.println("O resultado da divisao de 40 por 8 =  " +divisao);
+		System.out.println("O resultado da multiplicação  7 * 6  " +mult);

@@ -12,13 +12,13 @@
 
 
 
-<<<<<<< HEAD
 total_spent = 0  # Total gasto na compra
 products_over_100 = 0  # Contador de produtos que custam mais de R$ 100.00
 cheapest_product = None  # Nome do produto mais barato
 cheapest_price = None  # Preço do produto mais barato
 
 # Loop infinito até o usuário decidir parar
+
 while True:
     # Solicitando ao usuário para inserir o nome e o preço do produto
     product_name = input("Digite o nome do produto: ")
@@ -48,6 +48,3 @@ while True:
 print(f"A) O total gasto na compra é R$ {total_spent}")
 print(f"B) {products_over_100} produtos custam mais de R$ 100.00")
 print(f"C) O nome do produto mais barato é {cheapest_product}")
-=======
-
->>>>>>> fa2063ff16f3f53451bd7273fc412e3e940877d5

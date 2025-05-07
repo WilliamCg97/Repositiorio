@@ -44,16 +44,11 @@ section {
     border-radius: 10px;
 }
 
-.whatsapp-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fafafa;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+img {
+    cursor: pointer; /* Deixa claro que é clicável */
+    transition: transform 0.2s;
 }
 
-.whatsapp-button:hover {
-    background-color: #f9f9f9;
+img:hover {
+    transform: scale(1.1); /* Pequeno efeito ao passar o mouse */
 }

@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia de Parkour</title>
     <link rel="stylesheet" href="styles.css">
-   
-
 </head>
 <body>
     <header>
-        
         <h1>Academia de Parkour</h1>
         <nav>
             <ul>
@@ -25,21 +22,33 @@
         <h2>Sobre Nós</h2>
         <p>Somos a academia de parkour referência na cidade! A primeira academia de parkour de Mogi das Cruzes - SP
             Aula experimental gratuita !
-            </p>
+        </p>
     </section>
 
-    <div class="login-container">
-    <h2>Login</h2>
-    <form>
-        <label for="username">Usuário:</label>
-        <input type="text" id="username" name="username" required>
+    <!-- Tela de login -->
+    <div class="login-container" id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
 
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
 
-        <button type="submit">Entrar</button>
-    </form>
-</div>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <!-- Menu escondido inicialmente -->
+   <div class="menu-container" id="menuContainer" style="display: none;">
+    <h2>Bem-vindo!</h2>
+    <ul>
+        <li><a href="#">Aulas</a></li>
+        <li><a href="#">Professores</a></li>
+        <li><a href="#">Agende sua Aula</a></li>
+        <li><a href="#" id="logout">Sair</a></li>
+    </ul>
+    </div>
 
     <section id="treinamentos">
         <h2>Nossos Treinamentos</h2>
@@ -57,25 +66,30 @@
 
     <section id="contato">
         <h2>Entre em Contato</h2>
-        <form>
-            <a href="https://wa.link/3xq2z6" target="_blank">
-                <img src="whatsapp-icon.png" alt="Fale conosco pelo WhatsApp" width="50">
-            </a>
-            
-        </form>
-        
-</a>
-
-        <form>
-           <h3> </h3>
-           <a href="https://www.instagram.com/parkourmogi/" target="_blank"> Siga nosso instagram </a>
-        </form>
+        <a href="https://wa.link/3xq2z6" target="_blank">
+            <img src="whatsapp-icon.png" alt="Fale conosco pelo WhatsApp" width="50">
+        </a>
+        <a href="https://www.instagram.com/parkourmogi/" target="_blank">Siga nosso Instagram</a>
     </section>
 
     <footer>
         <p>&copy; 2025 Academia de Parkour - Todos os direitos reservados</p>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Script carregado"); // Teste para ver se o script está rodando
 
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Evita recarregar a página
+
+                console.log("Login submetido"); // Teste para ver se o evento está ativando
+
+                // Esconde login e mostra menu
+                document.getElementById("loginContainer").style.display = "none";
+                document.getElementById("menuContainer").style.display = "block";
+            });
+        });
+    </script>
+</body>
+</html>

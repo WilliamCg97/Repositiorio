@@ -159,25 +159,32 @@ main {
     padding: 20px;
 }
 
+.content-container {
+    position: relative; /* Mantém o posicionamento relativo para sobreposição */
+    z-index: 1;
+    padding: 40px;
+}
+
 .overlay-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #333; /* Fundo sólido igual ao menu */
+    width: 100%;
+    height: 100%;
+    background: #181818; /* Fundo sólido, sem transparência */
     color: white;
-    display: none; /* Oculta inicialmente */
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 1000; /* Garante que fique acima de tudo */
+    z-index: 100;
+}
+.content-container.blur {
+    filter: blur(10px); /* Aplica um desfoque */
+    pointer-events: none; /* Bloqueia interações com o conteúdo */
 }
 
-.overlay-container h2 {
-    margin-bottom: 20px;
-}
 
 .overlay-container button {
     margin-top: 20px;
@@ -192,3 +199,4 @@ main {
 .overlay-container button:hover {
     background: darkred;
 }
+

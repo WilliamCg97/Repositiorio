@@ -73,7 +73,7 @@ img:hover {
 }
 
 .login-container h2 {
-    text-align: 
+    text-align: center;
 }
 
 .login-container form {
@@ -157,4 +157,38 @@ body {
 main {
     margin-left: 22%;
     padding: 20px;
+}
+
+.overlay-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #333; /* Fundo sólido igual ao menu */
+    color: white;
+    display: none; /* Oculta inicialmente */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1000; /* Garante que fique acima de tudo */
+}
+
+.overlay-container h2 {
+    margin-bottom: 20px;
+}
+
+.overlay-container button {
+    margin-top: 20px;
+    padding: 10px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.overlay-container button:hover {
+    background: darkred;
 }

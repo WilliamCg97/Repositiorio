@@ -18,78 +18,100 @@
         </nav>
     </header>
     
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Somos a academia de parkour referência na cidade! A primeira academia de parkour de Mogi das Cruzes - SP
-            Aula experimental gratuita !
-        </p>
-    </section>
-
-    <!-- Tela de login -->
     <div class="login-container" id="loginContainer">
         <h2>Login</h2>
         <form id="loginForm">
             <label for="username">Usuário:</label>
             <input type="text" id="username" name="username" required>
-
             <label for="password">Senha:</label>
             <input type="password" id="password" name="password" required>
-
             <button type="submit">Entrar</button>
         </form>
     </div>
 
-    <!-- Menu escondido inicialmente -->
-   <div class="menu-container" id="menuContainer" style="display: none;">
-    <h2>Bem-vindo!</h2>
-    <ul>
-        <li><a href="#">Aulas</a></li>
-        <li><a href="#">Professores</a></li>
-        <li><a href="#">Agende sua Aula</a></li>
-        <li><a href="#" id="logout">Sair</a></li>
-    </ul>
+    <div class="menu-container" id="menuContainer" style="display: none;">
+        <h2>Bem-vindo!</h2>
+        <ul>
+            <li><a href="#" id="openOverlay">Aulas</a></li>
+            <li><a href="#">Professores</a></li>
+            <li><a href="#">Agende sua Aula</a></li>
+            <li><a href="#" id="logout">Sair</a></li>
+        </ul>
     </div>
 
-    <section id="treinamentos">
-        <h2>Nossos Treinamentos</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Iniciantes</h3>
-                <p>Aprenda os fundamentos e movimentos básicos do parkour.</p>
-            </div>
-            <div class="card">
-                <h3>Avançado</h3>
-                <p>Desenvolva habilidades complexas e aumente sua resistência.</p>
-            </div>
-        </div>
-    </section>
+    <!-- Container do conteúdo principal -->
+    <div class="content-container">
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos a academia de parkour referência na cidade! A primeira academia de parkour de Mogi das Cruzes - SP Aula experimental gratuita!</p>
+        </section>
 
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <a href="https://wa.link/3xq2z6" target="_blank">
-            <img src="whatsapp-icon.png" alt="Fale conosco pelo WhatsApp" width="50">
-        </a>
-        <a href="https://www.instagram.com/parkourmogi/" target="_blank">Siga nosso Instagram</a>
-    </section>
+        <section id="treinamentos">
+            <h2>Nossos Treinamentos</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Iniciantes</h3>
+                    <p>Aprenda os fundamentos e movimentos básicos do parkour.</p>
+                </div>
+                <div class="card">
+                    <h3>Avançado</h3>
+                    <p>Desenvolva habilidades complexas e aumente sua resistência.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <a href="https://wa.link/3xq2z6" target="_blank">
+                <img src="whatsapp-icon.png" alt="Fale conosco pelo WhatsApp" width="50">
+            </a>
+            <a href="https://www.instagram.com/parkourmogi/" target="_blank">Siga nosso Instagram</a>
+        </section>
+         <!-- Overlay para exibir detalhes das aulas -->
+    <div class="overlay-container" id="overlayContainer">
+        <h2>Detalhes das Aulas</h2>
+        <p>Aqui você pode incluir informações detalhadas sobre cada tipo de aula.</p>
+        <button id="closeOverlay">Fechar</button>
+    </div>
+
+   
+    </div>
 
     <footer>
         <p>&copy; 2025 Academia de Parkour - Todos os direitos reservados</p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            console.log("Script carregado"); // Teste para ver se o script está rodando
+    <script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Script carregado");
 
-            document.getElementById("loginForm").addEventListener("submit", function(event) {
-                event.preventDefault(); // Evita recarregar a página
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        console.log("Login submetido");
 
-                console.log("Login submetido"); // Teste para ver se o evento está ativando
+        document.getElementById("loginContainer").style.display = "none";
+        document.getElementById("menuContainer").style.display = "block";
+    });
 
-                // Esconde login e mostra menu
-                document.getElementById("loginContainer").style.display = "none";
-                document.getElementById("menuContainer").style.display = "block";
-            });
-        });
-    </script>
+    // Captura os elementos da sobreposição
+    const overlayContainer = document.getElementById("overlayContainer");
+    const openOverlay = document.getElementById("openOverlay");
+    const closeOverlay = document.getElementById("closeOverlay");
+
+    // Exibir sobreposição ao clicar em "Aulas"
+    openOverlay.addEventListener("click", function(event) {
+        event.preventDefault();
+        overlayContainer.style.display = "flex";
+    });
+
+    // Fechar sobreposição ao clicar no botão "Fechar"
+    closeOverlay.addEventListener("click", function() {
+        overlayContainer.style.display = "none";
+    });
+});
+
+</script>
+
 </body>
 </html>
